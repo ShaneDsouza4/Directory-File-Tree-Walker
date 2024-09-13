@@ -9,3 +9,9 @@ DFTW is a C program that recursively traverses a directory structure and perform
 - **Calculate File Size**: Computes the total size of all files in a directory tree (in bytes).
 - **Copy Directory Structure**: Copies an entire subdirectory, maintaining its structure at the destination. Optionally, you can exclude files by their extension.
 - **Move Directory**: Moves an entire subdirectory to another location, deleting the source after the move.
+
+## Command-Line Arguments
+
+### Count Files
+Counts and lists the total number of files in the directory tree rooted at `root_dir`.
+1. **Count Files**:  $ dftw -nf /home/user/documents
