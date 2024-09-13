@@ -14,6 +14,23 @@ DFTW is a C program that recursively traverses a directory structure and perform
 
 ### Count Files
 Counts and lists the total number of files in the directory tree rooted at `root_dir`.
-1. **Count Files**:  $ dftw -nf /home/user/documents
+Command: $ dftw -nf /home/user/documents
+Output: Total number of files: 42
 
 ### Count Directories
+Counts and lists the total number of directories in the directory tree rooted at `root_dir`.
+Command: $ dftw -nd /home/user/documents
+Output: Total number of directories: 7
+
+### Calculate File Size
+Lists the total size (in bytes) of all files present in the directory tree rooted at `root_dir`.
+Command: $ dftw -sf /home/user/documents
+Output: Size of all files: 204800 bytes.
+
+### Copy Directory Structure
+Copies the subdirectory from `source_dir` to `destination_dir`, maintaining the directory structure. If a file extension (`.c`, `.txt`, `.pdf`) is provided, files of that type will be excluded from the copy.
+Command: $ dftw -cpx /home/user/source /home/user/destination .txt
+
+### Move Directory
+Moves the entire subdirectory from `source_dir` to `destination_dir` and deletes the original directory after the move.
+Command: $ dftw -mv /home/user/source /home/user/destination
