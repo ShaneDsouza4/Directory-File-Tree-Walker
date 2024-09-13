@@ -15,3 +15,5 @@ DFTW is a C program that recursively traverses a directory structure and perform
 ### Count Files
 Counts and lists the total number of files in the directory tree rooted at `root_dir`.
 1. **Count Files**:  $ dftw -nf /home/user/documents
+
+### Count Directories
